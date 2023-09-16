@@ -1,5 +1,5 @@
-import { BACKEND_URL } from "./config.js";
-import { getNextQuestion } from "./quiz.js";
+import { loadNextQuestion } from "./quiz.js";
+import { loadScoreboard } from "./scoreboard.js";
 
 let a=0;
 
