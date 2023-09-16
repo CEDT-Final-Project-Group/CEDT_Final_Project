@@ -1,11 +1,13 @@
 [
     {
-        "question": "Question number#1",
+        "question": "Question number 1",
+        "image": "",
         "choices": ["Ans1","Ans2","Ans3","Ans4"],
         "answer": 3
     },
     {
         "question": "Question#2",
+        "image": "cat.jpg",
         "choices": ["Ans1","Ans2","Ans3","Ans4"],
         "answer": 1
     }
