@@ -4,12 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Final Project</title>
 </head>
 
 <body>
-    <h1 id="question">โจทย์</h1>
-    <!--เดี๋ยวซ่อนตารางทิ้ง มันใช้แค่ตอนตอบเสร็จอย่างเดียว-->
+    <script type="module" src="scripts/script.js"></script>
+    <div id="question-zone">
+        <!--อันนี้เป็นพื้นที่สำหรับ เล่นตัวเกม-->
+        <h1>ชื่อเกม</h1>
+        <p>description เกมย่อๆ มั้ง</p>
+        <div id="namebox">
+            <input type="text" id="username-input" placeholder="Username"><br>
+            <button id="submit-name">Play!</button>
+        </div>
+    </div>
+
+    <!--เอาเป็นกล่องในเวปเลยดีกว่า ที่ไม่ใช่popupอ่ะ
+    <script>
+        let player = prompt("Player name")
+    </script>
+-->
+
+    <!--
     <table border="1" id="main-table">
         <thead>
             <tr>
@@ -20,12 +37,13 @@
         <tbody id="itemList">
         </tbody>
     </table>
-    <script> 
-        let player = prompt("Player name")
-    </script>
-    <button id="get-question"d>Question</button>
+-->
+
+    <!--
+    <h1 id="question">โจทย์</h1>
+    <button id="get-question" d>Next</button>
     <button id="get-scoreboard">Scoreboard</button>
-    <script type="module" src="scripts/script.js"></script>
+-->
 </body>
 
 </html>
