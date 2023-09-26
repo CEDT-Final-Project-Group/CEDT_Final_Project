@@ -8,3 +8,7 @@ export function loadNextQuestion() {
     qusetionNumber++
     //
 };
+
+function closeOptionModal() {
+    document.getElementById('option-modal').style.display = "none"
+}

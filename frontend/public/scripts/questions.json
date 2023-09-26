@@ -1,9 +1,9 @@
 [
     {
-        "question": "Question number 1",
+        "question": "Where is the smallest bone in human body located?",
         "image": "",
-        "choices": ["Ans1","Ans2","Ans3","Ans4"],
-        "answer": 3
+        "choices": ["Toes","Ears","Fingers","Nose"],
+        "answer": 2
     },
     {
         "question": "Question#2",
