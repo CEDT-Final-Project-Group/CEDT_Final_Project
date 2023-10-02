@@ -9,17 +9,31 @@
 </head>
 
 <body>
-    <div id="header"></div>
+    <header></header>
     <div id="middle">
-        <div></div>
-        <div id="input-box">
-            <p>Please enter your username</p>
-            <input type="text" id="username-input" placeholder="Username">
-            <button id="submit-name">Play!</button>
+        <div id="popup">
+            <div class="flex2"></div>
+            <div id="input-box">
+                <p>Please enter your username</p>
+                <input type="text" id="username-input" placeholder="Username">
+                <button id="submit-button">Play!</button>
+            </div>
+            <div class="flex2"></div>
         </div>
-        <div></div>
+        <div id="main" class="blur">
+            <p id="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <img id="image" src="./scripts/images/dog.jpg" alt="cat">
+            <div id="answers">
+                <button id="answer1">ans1</button>
+                <button id="answer2">ans2</button>
+                <button id="answer3">ans3</button>
+                <button id="answer4">ans4</button>
+            </div>
+        </div>
     </div>
-    <div id="footer"></div>
+    <footer>
+        <p id="username"></p>
+    </footer>
     <!--
     <table border="1" id="main-table">
         <thead>

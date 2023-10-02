@@ -1,13 +1,13 @@
 [
     {
-        "question": "Where is the smallest bone in human body located?",
-        "image": "",
-        "choices": ["Toes","Ears","Fingers","Nose"],
+        "question": "Question#1",
+        "image": "cat.jpg",
+        "choices": ["ans1","ans2","ans3","ans4"],
         "answer": 2
     },
     {
         "question": "Question#2",
-        "image": "cat.jpg",
+        "image": "",
         "choices": ["Ans1","Ans2","Ans3","Ans4"],
         "answer": 1
     }
