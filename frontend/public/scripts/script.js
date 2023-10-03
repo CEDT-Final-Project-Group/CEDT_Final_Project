@@ -1,4 +1,4 @@
-import { loadNextQuestion } from "./quiz.js";
+import { loadNextQuestion, getAnswer } from "./quiz.js";
 import { loadScoreboard } from "./scoreboard.js";
 
 
@@ -15,6 +15,26 @@ document.addEventListener("DOMContentLoaded", function () {
   //submit button
   const submitButton = document.getElementById("submit-button");
   submitButton.addEventListener("click", submitName)
+
+  const btns = document.querySelectorAll('button[id^=answer]');
+  btns.forEach(btn => {
+    btn.addEventListener('click', event => {
+        event.preventDefault()
+        let chosenButton = event.currentTarget;
+        let ButtonId = chosenButton.id
+        let chosenChoice = parseInt(ButtonId.charAt(ButtonId.length - 1));
+        let answer = getAnswer();
+        let answerButtonID = "answer"+ (answer.toString());
+        const answerButton = document.getElementById(answerButtonID);
+        answerButton.className = "correctAnswer";
+        if(chosenChoice != answer) chosenButton.className = "wrongAnswer";
+        setTimeout(function(){
+          chosenButton.className = "";
+          answerButton.className = "";
+          loadNextQuestion();
+        }, 1000);
+    });
+  });
 });
 
 let usernameT = "NaN";
@@ -37,3 +57,6 @@ function loadQuestionPage() {
 function loadScoreboardPage() {
   //
 }
+
+//main
+loadNextQuestion()

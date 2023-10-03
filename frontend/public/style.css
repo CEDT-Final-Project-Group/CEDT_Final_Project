@@ -121,7 +121,7 @@ button{
 }
 
 button > img {
-    height: 100%;
+    height: 90%;
     width: 100%;
     object-fit: contain;
     margin: 0px;
@@ -139,4 +139,12 @@ button > img {
 #answers > *{
     width: calc(50% - 1vw);
     margin: 10px 0px 0px 0px;
+}
+
+.correctAnswer{
+    background-color: green;
+}
+
+.wrongAnswer{
+    background-color: red;
 }
