@@ -4,9 +4,6 @@ import { loadScoreboard } from "./scoreboard.js";
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  /*const getQuestion = document.getElementById("get-question");
-  getQuestion.addEventListener("click", loadNextQuestion);
-  */
   /*
   //scoreboard button
   const getScoreboard = document.getElementById("get-scoreboard");
@@ -16,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const submitButton = document.getElementById("submit-button");
   submitButton.addEventListener("click", submitName)
 
-  const btns = document.querySelectorAll('button[id^=answer]');
+  /*const btns = document.querySelectorAll('button[id^=answer]');
   btns.forEach(btn => {
     btn.addEventListener('click', event => {
         event.preventDefault()
@@ -34,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
           loadNextQuestion();
         }, 1000);
     });
-  });
+  });*/
 });
 
 let usernameT = "NaN";
@@ -42,21 +39,11 @@ let usernameT = "NaN";
 function submitName() {
   const usernameInput = document.getElementById("username-input");
   usernameT = usernameInput.value;
-  const username = document.getElementById("username");
-  username.textContent = usernameT;
-  const popup = document.getElementById("popup");
-  popup.style.display = "none";
-  const main = document.getElementById("main");
-  main.classList = "";
-}
-
-function loadQuestionPage() {
-  //
-}
-
-function loadScoreboardPage() {
-  //
+  const mainMenu = document.getElementById("main-menu");
+  mainMenu.classList = "hide";
+  const introPage = document.getElementById("intro");
+  introPage.classList = "";
 }
 
 //main
-loadNextQuestion()
+//loadNextQuestion()

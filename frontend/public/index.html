@@ -9,55 +9,28 @@
 </head>
 
 <body>
-    <header></header>
-    <div id="middle">
-        <div id="popup">
-            <div class="flex2"></div>
+    <div id="main-menu">
+        <div id="main-menu-middle">
+            <img id="logo" src="./scripts/images/bug-buzzle.png" alt="bug-buzzle-logo">
+            <div class="space"></div>
             <div id="input-box">
-                <p>Please enter your username</p>
-                <input type="text" id="username-input" placeholder="Username">
-                <button id="submit-button">Play!</button>
+                <div id="input-box-rec1">What's your name?</div>
+                <div id="input-box-rec2">
+                    <input type="text" id="username-input" placeholder="Username">
+                </div>
             </div>
-            <div class="flex2"></div>
-        </div>
-        <div id="main" class="blur">
-            <p id="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-            <img id="image" src="./scripts/images/dog.jpg" alt="dog">
-            <div id="answers">
-                <button id="answer0">
-                    <img src="./scripts/images/dog.jpg" alt="cat">
-                </button>
-                <button id="answer1">
-                    <img src="./scripts/images/dog.jpg" alt="cat">
-                </button>
-                <button id="answer2">
-                    <img src="./scripts/images/dog.jpg" alt="cat">
-                </button>
-                <button id="answer3">
-                    <img src="./scripts/images/dog.jpg" alt="cat">
+            <div class="space"></div>
+            <div id="submit-button-zone">
+                <button type="submit" id="submit-button">
+                    <div id="submit-button-inner">OK</div>
                 </button>
             </div>
         </div>
     </div>
-    <footer>
-        <p id="username"></p>
-    </footer>
-    <!--
-    <table border="1" id="main-table">
-        <thead>
-            <tr>
-                <th>Player</th>
-                <th>Score</th>
-            </tr>
-        </thead>
-        <tbody id="itemList">
-        </tbody>
-    </table>
-    <button id="get-question"d>Question</button>
-    <button id="get-scoreboard">Scoreboard</button>
--->
+    <div id="intro" class="hide">
+        <p>hi</p>
+    </div>
     <script type="module" src="scripts/script.js"></script>
 </body>
-</main>
 
 </html>
