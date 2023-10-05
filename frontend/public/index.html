@@ -11,7 +11,7 @@
 <body>
     <div id="main-menu">
         <div id="main-menu-middle">
-            <img id="logo" src="./scripts/images/bug-buzzle.png" alt="bug-buzzle-logo">
+            <img class="logo" src="./scripts/images/bug-buzzle.png" alt="bug-buzzle-logo">
             <div class="space"></div>
             <div id="input-box">
                 <div id="input-box-rec1">What's your name?</div>
@@ -21,14 +21,52 @@
             </div>
             <div class="space"></div>
             <div id="submit-button-zone">
-                <button type="submit" id="submit-button">
-                    <div id="submit-button-inner">OK</div>
+                <button type="submit" class="button1" id="submit-button">
+                    <div class="button1-inner">OK</div>
                 </button>
             </div>
         </div>
     </div>
     <div id="intro" class="hide">
-        <p>hi</p>
+        <div id="intro-main">
+            <div id="logo-zone">
+                <img class="logo" src="./scripts/images/bug-buzzle.png" alt="bug-buzzle-logo">
+            </div>
+            <div class="space"></div>
+            <div id="dialog-zone">
+                <div id="portrait-box">
+                    <img class="logo" src="./scripts/images/dog.jpg" id="portrait" alt="dogo">
+                </div>
+                <div id="dialog-box">
+                    <div id="dialog-text">
+                        <p>Will you help us relight the beacon of hope once more?</p>
+                        <p>Greetings, Esteemed Logician,</p>
+                        <p>
+                            I am King Binaryus, ruler of Electralandia. Our Bug kingdom once thrived on logic and
+                            brilliance,
+                            guided by our Grand Logic Gate. But dark times have fallen upon us. Sinister bugs from the
+                            Evil
+                            Bug Kingdom have sabotage the Grand Logic Gate and plunged us into darkness and disarray.
+                        </p>
+                        <p>I implore you, renowned Logician, to embark on a quest to restore our Grand Logic Gate and
+                            bring the light back to our kingdom.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <p id="quest-text">Accept the quest and light up Electralandia!</p>
+            <div class="space"></div>
+            <div id="start-button-zone">
+                <button type="submit" class="button1" id="start-button">
+                    <div class="button1-inner">Start</div>
+                </button>
+            </div>
+            <div class="space"></div>
+        </div>
+    </div>
+    <div id="quiz-page" class="hide">
+        
     </div>
     <script type="module" src="scripts/script.js"></script>
 </body>

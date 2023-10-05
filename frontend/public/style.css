@@ -1,19 +1,90 @@
-body {
+/*
+elements -----------------------------------------------------------------
+*/
+html {
     height: 100vh;
+}
+
+body {
+    height: 100%;
     margin: 0px;
     background: #FFD028;
 }
 
-button{
+button {
     transition: 0.1s;
 }
 
-.hide{
+/*
+class -----------------------------------------------------------------
+*/
+.hide {
     display: none !important;
 }
 
+.space {
+    height: 1rem;
+}
+
+.logo {
+    width: 92%;
+}
+
+.logo:hover {
+    transform: translateY(-4px);
+}
+
+.button1 {
+    width: 100%;
+    max-width: 336px;
+    flex: 1 1 auto;
+    height: 4.25rem;
+    padding: 0.6rem 0.2rem 0.6rem 0.2rem;
+
+    border-radius: 1.875rem;
+    border: 0px;
+    background: #895211;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1-inner {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 1.875rem;
+    border: 7px solid #FFE49D;
+    background: #895211;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Happy Monkey;
+    /*???*/
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button1:hover {
+    box-shadow: rgba(45, 35, 66, 0.2) 0 4px 8px, rgba(45, 35, 66, 0.1) 0 7px 13px -3px;
+    transform: translateY(-1px);
+}
+
+.button1:active {
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
 /*
-main menu page --------------------------------------------
+main menu page -----------------------------------------------------------------
 */
 #main-menu {
     height: 100%;
@@ -30,10 +101,6 @@ main menu page --------------------------------------------
     align-items: center;
 }
 
-#logo {
-    width: 92%;
-}
-
 #input-box {
     width: 80%;
     height: 15rem;
@@ -45,6 +112,10 @@ main menu page --------------------------------------------
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#input-box:hover {
+    transform: translateY(-2px);
 }
 
 #input-box>div {
@@ -111,59 +182,106 @@ main menu page --------------------------------------------
     justify-content: center;
 }
 
-#submit-button {
-    width: 100%;
-    max-width: 336px;
-    flex: 1 1 auto;
-    height: 4.25rem;
-    padding: 0.6rem 0.2rem 0.6rem 0.2rem;
-
-    border-radius: 1.875rem;
-    border: 0px;
-    background: #895211;
-
+/*
+intro page -----------------------------------------------------------------
+*/
+#intro {
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+#intro-main {
+    flex: 0 1 auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-#submit-button-inner {
-    width: 100%;
-    height: 100%;
+#intro-main>.space {
+    height: 2rem;
+}
 
-    border-radius: 1.875rem;
-    border: 7px solid #FFE49D;
-    background: #895211;
+#logo-zone {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dialog-zone {
+    max-height: 25rem;
+    width: 94%;
+
+    display: flex;
+}
+
+#portrait-box {
+    flex: 1 1 auto;
+    width: 50px;
+    height: max-content;
+}
+
+#portrait {
+    width: 90%;
+    height: auto;
+    box-shadow: rgba(45, 35, 66, 0.2) 0 4px 8px, rgba(45, 35, 66, 0.1) 0 7px 13px -3px;
+}
+
+#portrait:hover {
+    transform: translateY(-1px);
+}
+
+#dialog-box {
+    width: 100px;
+    height: max-content;
+    flex: 2 1 auto;
+
+    border-radius: 1.25rem;
+    background: rgba(150, 128, 128, 0.62);
+    box-shadow: rgba(45, 35, 66, 0.2) 0 4px 8px, rgba(45, 35, 66, 0.1) 0 7px 13px -3px;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+#dialog-box:hover {
+    transform: translateY(-1px);
+}
+
+#dialog-text {
+    width: 92%;
+    height: max-content;
 
     color: #FFF;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Happy Monkey;
-    /*???*/
-    font-size: 2.1875rem;
+    font-family: ABeeZee;
+    font-size: calc(0.6rem + 0.7vw);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-#submit-button:hover {
-    box-shadow: rgba(45, 35, 66, 0.2) 0 4px 8px, rgba(45, 35, 66, 0.1) 0 7px 13px -3px;
-    transform: translateY(-1px);
+#quest-text {
+    margin: 0rem;
+    font-size: calc(0.7rem + 1.1vw);
+    font-weight: bold;
+    color: #895211;
 }
 
-#submit-button:active {
-    box-shadow: none;
-    transform: translateY(1px);
+#start-button-zone {
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
-#main-menu-middle>.space {
-    height: 1rem;
+#start-button {
+    height: 3.6rem;
+    max-width: 240px;
 }
 
-/*
-intro page --------------------------------------------
-*/
+#start-button>div {
+    font-size: calc(1.4rem + 0.4vw);
+}

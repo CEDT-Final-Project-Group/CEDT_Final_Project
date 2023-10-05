@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
   //submit button
   const submitButton = document.getElementById("submit-button");
   submitButton.addEventListener("click", submitName)
+  const startButton = document.getElementById("start-button");
+  startButton.addEventListener("click", startQuiz)
 
   /*const btns = document.querySelectorAll('button[id^=answer]');
   btns.forEach(btn => {
@@ -42,6 +44,13 @@ function submitName() {
   const mainMenu = document.getElementById("main-menu");
   mainMenu.classList = "hide";
   const introPage = document.getElementById("intro");
+  introPage.classList = "";
+}
+
+function startQuiz() {
+  const mainMenu = document.getElementById("intro");
+  mainMenu.classList = "hide";
+  const introPage = document.getElementById("quiz-page");
   introPage.classList = "";
 }
 
