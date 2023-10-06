@@ -1,16 +1,16 @@
 [
     {
         "question": "Question#1",
-        "type": "text",
-        "image": "cat.jpg",
-        "choices": ["ans1","ans2","ans3","ans4"],
+        "type": "image",
+        "image": "3_1.jpg",
+        "choices": ["or.jpg","xor.jpg","nor.jpg","xnor.jpg"],
         "answer": 2
     },
     {
         "question": "Question#2",
-        "type": "image",
-        "image": "",
-        "choices": ["dog.jpg","cat.jpg","dog.jpg","dog.jpg"],
-        "answer": 1
+        "type": "text",
+        "image": "cat.jpg",
+        "choices": ["Ans1","Ans2","Ans3","Ans4"],
+        "answer": 2
     }
 ]

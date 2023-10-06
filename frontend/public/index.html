@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!--main-menu-->
     <div id="main-menu">
         <div id="main-menu-middle">
             <img class="logo" src="./scripts/images/bug-buzzle.png" alt="bug-buzzle-logo">
@@ -16,7 +17,7 @@
             <div id="input-box">
                 <div id="input-box-rec1">What's your name?</div>
                 <div id="input-box-rec2">
-                    <input type="text" id="username-input" placeholder="Username">
+                    <input type="text" id="username-input" placeholder="Username" spellcheck="false">
                 </div>
             </div>
             <div class="space"></div>
@@ -27,7 +28,9 @@
             </div>
         </div>
     </div>
-    <div id="intro" class="hide">
+
+    <!--intro page-->
+    <div id="intro-page" class="hide">
         <div id="intro-main">
             <div id="logo-zone">
                 <img class="logo" src="./scripts/images/bug-buzzle.png" alt="bug-buzzle-logo">
@@ -39,7 +42,6 @@
                 </div>
                 <div id="dialog-box">
                     <div id="dialog-text">
-                        <p>Will you help us relight the beacon of hope once more?</p>
                         <p>Greetings, Esteemed Logician,</p>
                         <p>
                             I am King Binaryus, ruler of Electralandia. Our Bug kingdom once thrived on logic and
@@ -51,6 +53,7 @@
                         <p>I implore you, renowned Logician, to embark on a quest to restore our Grand Logic Gate and
                             bring the light back to our kingdom.
                         </p>
+                        <p>Will you help us relight the beacon of hope once more?</p>
                     </div>
                 </div>
             </div>
@@ -65,8 +68,46 @@
             <div class="space"></div>
         </div>
     </div>
+
+    <!--quiz page-->
     <div id="quiz-page" class="hide">
-        
+        <div id="quiz-main">
+            <header>
+                <div id="timer">10.00</div>
+                <div class="horizontal-space"></div>
+                <div id="score">5</div>
+            </header>
+            <div class="space"></div>
+            <div id="quiz-zone">
+                <div id="image-zone">
+                    <div id="question-box">
+                        <img id="question-image">
+                    </div>
+                </div>
+                <div id="answers">
+                    <div id="answer0-zone">
+                        <button class="answer-button" id="answer0">
+                            <img id="answers0-image">
+                        </button>
+                    </div>
+                    <div id="answer1-zone">
+                        <button class="answer-button" id="answer1">
+                            <img id="answers1-image">
+                        </button>
+                    </div>
+                    <div id="answer2-zone">
+                        <button class="answer-button" id="answer2">
+                            <img id="answers2-image">
+                        </button>
+                    </div>
+                    <div id="answer3-zone">
+                        <button class="answer-button" id="answer3">
+                            <img id="answers3-image">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script type="module" src="scripts/script.js"></script>
 </body>
