@@ -21,6 +21,15 @@ app.post("/scoreboard", (req, res) => {
     if (!username || !score)
         res.status(400).json({ message: "Incomplete Player's data" });
     else {
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].username == username) {
+                data[i].score = score;
+                const id = data[i].id;
+                saveData(data, './src/data/playersData.json');
+                res.status(201).json({ message: `Data #${id}: Player ${username} with the score of ${score} has been saved` });
+                return;
+            }
+        }
         const id = data[data.length - 1].id + 1;
         data.push({ id, username, score });
         saveData(data, './src/data/playersData.json');

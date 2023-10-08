@@ -1,16 +1,80 @@
 [
     {
-        "question": "Question#1",
-        "type": "image",
         "image": "3_1.jpg",
         "choices": ["or.jpg","xor.jpg","nor.jpg","xnor.jpg"],
-        "answer": 2
+        "answer": 1,
+        "score": 6
     },
     {
-        "question": "Question#2",
-        "type": "text",
-        "image": "cat.jpg",
-        "choices": ["Ans1","Ans2","Ans3","Ans4"],
-        "answer": 2
+        "image": "1_4.jpg",
+        "choices": ["nand.jpg","nor.jpg","or.jpg","and.jpg"],
+        "answer": 1,
+        "score": 2
+    },
+    {
+        "image": "1_1.jpg",
+        "choices": ["and.jpg","xor.jpg","nor.jpg","and.jpg"],
+        "answer": 0,
+        "score": 2
+    },
+    {
+        "image": "3_2.jpg",
+        "choices": ["nand.jpg","or.jpg","nor.jpg","and.jpg"],
+        "answer": 0,
+        "score": 6
+    },
+    {
+        "image": "1_6.jpg",
+        "choices": ["nand.jpg","xnor.jpg","nor.jpg","or.jpg"],
+        "answer": 1,
+        "score": 2
+    },
+    {
+        "image": "2_2.jpg",
+        "choices": ["and.jpg","xnor.jpg","or.jpg","nand.jpg"],
+        "answer": 0,
+        "score": 4
+    },
+    {
+        "image": "2_1.jpg",
+        "choices": ["or.jpg","xor.jpg","xnor.jpg","and.jpg"],
+        "answer": 0,
+        "score": 4
+    },
+    {
+        "image": "1_2.jpg",
+        "choices": ["and.jpg","xor.jpg","or.jpg","nand.jpg"],
+        "answer": 2,
+        "score": 2
+    },
+    {
+        "image": "1_5.jpg",
+        "choices": ["or.jpg","xor.jpg","nor.jpg","nand.jpg"],
+        "answer": 1,
+        "score": 2
+    },
+    {
+        "image": "4_2.jpg",
+        "choices": ["or.jpg","xor.jpg","nor.jpg","and.jpg"],
+        "answer": 3,
+        "score": 6
+    },
+    {
+        "image": "2_3.jpg",
+        "choices": ["nor.jpg","xnor.jpg","or.jpg","nand.jpg"],
+        "answer": 2,
+        "score": 4
+    },
+    {
+        "image": "2_4.jpg",
+        "choices": ["xor.jpg","or.jpg","nor.jpg","and.jpg"],
+        "answer": 3,
+        "score": 4
+    },
+    {
+        "image": "2_5.jpg",
+        "choices": ["and.jpg","xnor.jpg","xor.jpg","nand.jpg"],
+        "answer": 3,
+        "score": 4
     }
 ]

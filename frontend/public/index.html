@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     <title>Final Project</title>
 </head>
 
@@ -17,7 +21,7 @@
             <div id="input-box">
                 <div id="input-box-rec1">What's your name?</div>
                 <div id="input-box-rec2">
-                    <input type="text" id="username-input" placeholder="Username" spellcheck="false">
+                    <input type="text" id="username-input" placeholder="Username" spellcheck="false" autocomplete="off">
                 </div>
             </div>
             <div class="space"></div>
@@ -32,23 +36,23 @@
     <!--intro page-->
     <div id="intro-page" class="hide">
         <div id="intro-main">
-            <div id="logo-zone">
+            <div class="logo-zone">
                 <img class="logo" src="./scripts/images/bug-buzzle.png" alt="bug-buzzle-logo">
             </div>
             <div class="space"></div>
             <div id="dialog-zone">
                 <div id="portrait-box">
-                    <img class="logo" src="./scripts/images/dog.jpg" id="portrait" alt="dogo">
+                    <img class="logo" src="./scripts/images/king1.png" id="portrait" alt="dogo">
                 </div>
                 <div id="dialog-box">
                     <div id="dialog-text">
                         <p>Greetings, Esteemed Logician,</p>
                         <p>
-                            I am King Binaryus, ruler of Electralandia. Our Bug kingdom once thrived on logic and
+                            I am King Binaryus, ruler of Electralandia. Our kingdom once thrived on logic and
                             brilliance,
                             guided by our Grand Logic Gate. But dark times have fallen upon us. Sinister bugs from the
-                            Evil
-                            Bug Kingdom have sabotage the Grand Logic Gate and plunged us into darkness and disarray.
+                            dark forest have sabotage our Grand Logic Gate and plunged us
+                            into darkness and disarray.
                         </p>
                         <p>I implore you, renowned Logician, to embark on a quest to restore our Grand Logic Gate and
                             bring the light back to our kingdom.
@@ -73,9 +77,9 @@
     <div id="quiz-page" class="hide">
         <div id="quiz-main">
             <header>
-                <div id="timer">10.00</div>
+                <div id="timer">02:00</div>
                 <div class="horizontal-space"></div>
-                <div id="score">5</div>
+                <div id="score">0</div>
             </header>
             <div class="space"></div>
             <div id="quiz-zone">
@@ -109,7 +113,61 @@
             </div>
         </div>
     </div>
+
+    <!--ending page-->
+    <div id="ending-page" class="hide">
+        <div id="ending-main">
+            <p id="ending-text">Congratulation!</p>
+            <p id="ending-score-text">You have fix a total of 0 logic gates with the score of 0</p>
+            <div id="ending-message-zone">
+                <div id="ending-image-box">
+                    <img src="./scripts/images/ending_1.png" id="ending-image" alt="dogo">
+                </div>
+                <div class="space"></div>
+                <div id="ending-message-box">
+                    <p id="ending-message-text">
+                        With your great help, the people of Electralandia are able to restore the grand Logic Gate, and
+                        are now erupted in celebration! Streets are glowed with colorful lights, and the great Logician,
+                        hailed as a hero, led a joyous parade. The kingdom's unity and brilliance were reborn, ensuring
+                        a bright and united future once more.
+                    </p>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div id="next-button-zone">
+                <button type="submit" class="button1" id="next-button">
+                    <div class="button1-inner">Next</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--scoreboard page-->
+    <div id="scoreboard-page" class="hide">
+        <div id="scoreboard-main">
+            <div class="logo-zone">
+                <img class="logo" src="./scripts/images/bug-buzzle.png" alt="bug-buzzle-logo">
+            </div>
+            <div class="space"></div>
+            <div id="scoreboard-zone">
+                <div id="scoreboard-head">
+                    <div id="scoreboard-head-box">TOP 10</div>
+                </div>
+                <div class="space"></div>
+                <div id="rank-name-score">
+                    <div id="rank-left"></div>
+                    <div id="name-middle"></div>
+                    <div id="score-right"></div>
+                </div>
+            </div>
+            <div class="space"></div>
+            <div id="Home-button-zone">
+                <button type="submit" class="button1" id="menu-button">
+                    <div class="button1-inner">Home</div>
+                </button>
+            </div>
+        </div>
+    </div>
     <script type="module" src="scripts/script.js"></script>
-</body>
 
 </html>
