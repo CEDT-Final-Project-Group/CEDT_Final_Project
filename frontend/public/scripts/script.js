@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         answerButton.className = "answer-button";
         loadNextQuestion();
         canAnswer = true;
-      }, 100);
+      }, 500);
     });
   });
 });
@@ -72,6 +72,8 @@ function submitName() {
 
   const introPage = document.getElementById("intro-page");
   introPage.classList = "";
+  const greeting = document.getElementById("greeting");
+  greeting.innerHTML = `Greetings ${usernameT}, our Esteemed Logician,`
 }
 
 function LoadQuiz() {

@@ -110,10 +110,9 @@ export function endQuiz() {
         endingMessage.innerHTML = `Despite ${usernameT}'s efforts, the grand Logic Gate remained incomplete. Electralandia was now overrun by sinister Bugs. The grand Logician's valiant fight ended in despair.
                                 Electralandia, once a beacon of hope, now crumbled to the ground, the kingdom's brilliance was extinguished forever.`;
     }
-
     const payload = {
         username: usernameT,
-        score: scorePoint,
+        score: scorePoint.toString(),
     };
     addScoreboard(payload);
 }

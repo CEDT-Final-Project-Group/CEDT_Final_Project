@@ -90,11 +90,13 @@ class -----------------------------------------------------------------
 }
 
 .correctAnswer {
-    background-color: green !important;
+    background-color: #A3FF9B !important;
+    border-color: #00943B !important;
 }
 
 .wrongAnswer {
-    background-color: red !important;
+    background-color: #ff5353 !important;
+    border-color: #F00 !important;
 }
 
 .logo-zone {
@@ -564,7 +566,7 @@ ending page -----------------------------------------------------------------
     width: 100%;
     height: max-content;
     flex: 2 1 auto;
-    
+
     display: flex;
     justify-content: center;
 }

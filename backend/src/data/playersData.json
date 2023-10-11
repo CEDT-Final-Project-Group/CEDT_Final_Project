@@ -2,26 +2,31 @@
   {
     "id": 0,
     "username": "Sakepisit Maysamat",
-    "score": 20
+    "score": "20"
   },
   {
     "id": 1,
     "username": "Nattanee Sirichantasing",
-    "score": 12
+    "score": "12"
   },
   {
     "id": 2,
     "username": "Pitchsinee Lertpanjasri",
-    "score": 15
+    "score": "15"
   },
   {
     "id": 3,
     "username": "Sakdipat Sukhaneskul",
-    "score": 17
+    "score": "17"
   },
   {
     "id": 4,
     "username": "Supitchaya Poomimart",
-    "score": 8
+    "score": "8"
+  },
+  {
+    "id": 5,
+    "username": "dhtrfgdhjft",
+    "score": "2"
   }
 ]
