@@ -7,7 +7,6 @@ export let totalCorrect = 0;
 let canAnswer = true;
 
 document.addEventListener("DOMContentLoaded", function () {
-  //submit button
   const submitButton = document.getElementById("submit-button");
   submitButton.addEventListener("click", submitName)
 
@@ -61,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function submitName() {
   const usernameInput = document.getElementById("username-input");
-  usernameT = usernameInput.value;
+  usernameT = (usernameInput.value).trim();
   if (usernameT == "" || usernameT == null) {
     alert("Name must be filled out");
     return;
@@ -109,4 +108,10 @@ function menuPage() {
 
   const mainMenu = document.getElementById("main-menu");
   mainMenu.classList = "";
+}
+
+//samsung internet dark mode problem
+if (navigator.userAgent.match(/samsung/i)) {
+  alert("Samsung Internet may show this website incorrectly due to its auto dark mode\n" +
+    "We recommend turning Samsung Internet's dark mode off or switch to other browsers");
 }

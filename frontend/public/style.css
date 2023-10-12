@@ -15,9 +15,17 @@ body {
     background: #ffc628;
 }
 
+.test{
+    background: red !important;
+}
+
 button {
     transition: 0.1s;
 }
+
+button#btn-show {
+    z-index: 10;
+  }
 
 img {
     -moz-user-select: none;
@@ -30,6 +38,7 @@ class -----------------------------------------------------------------
 */
 .hide {
     display: none !important;
+    opacity: 0 !important;
 }
 
 .space {
@@ -577,7 +586,7 @@ ending page -----------------------------------------------------------------
 }
 
 #ending-image {
-    width: 80%;
+    width: 70%;
     height: auto;
     box-shadow: rgba(45, 35, 66, 0.2) 0 4px 8px, rgba(45, 35, 66, 0.1) 0 7px 13px -3px;
 }
@@ -609,7 +618,7 @@ ending page -----------------------------------------------------------------
 
     color: #FFF;
     font-family: 'Young Serif', serif;
-    font-size: calc(0.6rem + 0.7vw);
+    font-size: calc(0.5rem + 0.7vw);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
