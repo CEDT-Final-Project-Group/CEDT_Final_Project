@@ -73,7 +73,7 @@ function submitName() {
   const introPage = document.getElementById("intro-page");
   introPage.classList = "";
   const greeting = document.getElementById("greeting");
-  greeting.innerHTML = `Greetings ${usernameT}, our Esteemed Logician,`
+  greeting.innerHTML = `Greetings ${usernameT},<br>our Esteemed Logician,`
 }
 
 function LoadQuiz() {

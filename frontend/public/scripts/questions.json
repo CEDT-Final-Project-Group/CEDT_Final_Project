@@ -18,12 +18,6 @@
         "score": 2
     },
     {
-        "image": "3_2.jpg",
-        "choices": ["nand.jpg","or.jpg","nor.jpg","and.jpg"],
-        "answer": 0,
-        "score": 6
-    },
-    {
         "image": "1_6.jpg",
         "choices": ["nand.jpg","xnor.jpg","nor.jpg","or.jpg"],
         "answer": 1,
@@ -76,5 +70,12 @@
         "choices": ["and.jpg","xnor.jpg","xor.jpg","nand.jpg"],
         "answer": 3,
         "score": 4
+    },
+    {
+        "question": "Question#13",
+        "image": "3_4.jpg",
+        "choices": ["and.jpg","or.jpg","xnor.jpg","nand.jpg"],
+        "answer": 2,
+        "score": 6
     }
 ]

@@ -1,4 +1,5 @@
-export const BACKEND_URL = "http://localhost:3222";
+export const ADDRESS = "http://localhost";
+export const BACKEND_URL = `${ADDRESS}:3222`;
 
 export const MEMBERS = [
     "Nattanee Sirichantasing",

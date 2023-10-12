@@ -1,6 +1,10 @@
 /*
 elements -----------------------------------------------------------------
 */
+:root {
+    color-scheme: light only;
+}
+
 html {
     height: 100vh;
 }
@@ -230,7 +234,7 @@ intro page -----------------------------------------------------------------
 }
 
 #dialog-zone {
-    max-height: 25rem;
+    max-height: 28rem;
     width: 94%;
 
     display: flex;
@@ -238,7 +242,7 @@ intro page -----------------------------------------------------------------
 
 #portrait-box {
     flex: 1 1 auto;
-    width: 50px;
+    width: 20px;
     height: max-content;
 }
 
@@ -276,7 +280,7 @@ intro page -----------------------------------------------------------------
 
     color: #f7f7f7;
     font-family: 'Young Serif', serif;
-    font-size: calc(0.5rem + 0.5vw);
+    font-size: calc(0.6rem + 0.6vw);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -284,9 +288,10 @@ intro page -----------------------------------------------------------------
 
 #quest-text {
     margin: 0rem;
-    font-size: calc(0.6rem + 0.9vw);
+    font-size: calc(0.45rem + 1.6vw);
     font-family: 'Young Serif', serif;
     font-weight: bold;
+    text-align: center;
     color: #895211;
 }
 
@@ -674,14 +679,17 @@ scoreboard page ----------------------------------------------------------------
     justify-content: center;
     align-items: center;
 
-    color: #FFF;
-    text-align: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     /*???*/
+    color: white;
+    font-family: 'Hanalei Fill';
+    -webkit-text-stroke-width: calc(0.12rem + 0.06vw);
+    -webkit-text-stroke-color: #895211;
     font-size: calc(1.6rem + 0.8vw);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    line-height: normal;
+    text-align: center;
 }
 
 #scoreboard-zone>.space {
@@ -701,40 +709,33 @@ scoreboard page ----------------------------------------------------------------
     justify-content: space-between;
 }
 
-#dialog-box:hover {
-    transform: translateY(-1px);
-}
-
-#rank-left {
-    color: #895211;
-    font-family: 'Young Serif', serif;
-    font-size: calc(0.6rem + 0.7vw);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    justify-content: left;
-    text-align: center;
-}
-
-#name-middle {
-    color: #895211;
-    font-family: 'Young Serif', serif;
-    font-size: calc(0.6rem + 0.7vw);
+#rank-name-score>*>* {
+    margin: 10px;
+    color: white;
+    font-family: 'Hanalei Fill';
+    -webkit-text-stroke-width: calc(0.08rem + 0.06vw);
+    -webkit-text-stroke-color: #895211;
+    font-size: calc(1rem + 0.7vw);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     justify-content: center;
 }
 
+#rank-left {
+    justify-content: left;
+}
+
+#rank-left>* {
+    margin-left: 0rem;
+}
+
 #score-right {
-    color: #895211;
-    font-family: 'Young Serif', serif;
-    font-size: calc(0.6rem + 0.7vw);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     justify-content: right;
-    text-align: center;
+}
+
+#score-right>* {
+    margin-right: 0rem;
 }
 
 #Home-button-zone {
@@ -751,21 +752,3 @@ scoreboard page ----------------------------------------------------------------
 #Home-button>div {
     font-size: calc(1.4rem + 0.4vw);
 }
-
-/*
-#answer0-box {
-    background-color: #07A7DB;
-}
-
-#answer1-box {
-    background-color: plum;
-}
-
-#answer2-box {
-    background-color: green;
-}
-
-#answer3-box {
-    background-color: wheat;
-}
-*/

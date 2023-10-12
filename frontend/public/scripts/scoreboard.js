@@ -13,7 +13,7 @@ export async function loadScoreboard() {
     ranks.innerHTML = "";
     names.innerHTML = "";
     scores.innerHTML = "";
-    let i = 0
+    let i = 0;
     for (const player of data) {
         const playerRank = document.createElement("p");
         playerRank.innerHTML = ++i + ".";
