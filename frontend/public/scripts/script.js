@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 500);
     });
   });
+  alert("Note: This live website does not have server since Github page only allow static site. So this preview site will not have scoreboard at the end of the game but it's still playable");
 });
 
 function submitName() {
